@@ -1,0 +1,70 @@
+<style>
+    nav{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        border-bottom: 1px dotted gray;
+
+    }
+
+    .o1{
+      height: 100%;
+      width: 50%;
+     
+    }
+    .o1 img{
+       height: 95%;
+       width: 25%;
+       margin-left: 21px;
+       
+    }
+
+    .o2{
+      height: 100%;
+      width: 50%;
+      
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 45px;
+    }
+
+    .o2 a{
+        text-decoration: none;
+
+    }
+    .o2 h1{
+      margin-right: 38px;
+      font-family: Helvetica;
+      color: rgb(16, 16, 16);
+      font-size: 28px;
+      font-weight: 600;
+
+    }
+
+    
+</style>
+
+<nav>
+    <%if(!admin){%>
+        <div class="o1">
+         <img src="https://i.pinimg.com/originals/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg" alt="">
+        </div>
+        <div class="o2">
+             <a href="/"><h1>Signup</h1></a>
+             <a href="/login"><h1>Login</h1></a>
+        </div>
+        <%}else{%>
+            <div class="o1">
+                <img src="https://i.pinimg.com/originals/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg" alt="">
+               </div>
+               <div class="o2">
+                    <a href="/profile"><h1>Profile</h1></a>
+                    <a href="/about"><h1>About US</h1></a>
+                    <a href="/post"><h1>Posts</h1></a>
+
+                    <a href="/signout"><h1>SignOut</h1></a>
+               </div>
+
+               <%}%>
+</nav>

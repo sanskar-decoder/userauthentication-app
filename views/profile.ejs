@@ -1,0 +1,33 @@
+<%-include('foxy/header.ejs')%>
+
+<%-include('foxy/nav.ejs')%>
+
+<style>
+ h4{
+    color: red;
+    font-family: Monument;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 58px;
+
+ }
+
+ button{
+    padding: 25px 35px;
+    margin-left: 40%;
+    font-size: 24px;
+    font-family: gilroy ;
+    color: lavender;
+    background-color: rgba(0, 0, 0, 0.888);
+    border-radius: 7px;
+ }
+</style>
+
+<h4>  Welcome <%=admin.fullname%> !!! </h4>
+<a href="/reset"><button>Reset Password</button></a>
+
+
+
+<%-include('foxy/footer.ejs')%>
+
